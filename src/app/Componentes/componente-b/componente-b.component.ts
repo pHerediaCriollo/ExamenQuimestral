@@ -14,15 +14,20 @@ export class ComponenteBComponent implements OnInit {
   constructor(private router: Router){}
 
   ngOnInit(): void {
+    this.nombre;
+    this.apellido;
+    this.direccion;
+    this.celular;
+    this.edad;
   }
   Navegacion(){
     this.router.navigate([''])
       }
   Recuperar(){
-    localStorage.nombre(this.nombre)
-    localStorage.apellido(this.apellido)
-    localStorage.direccion(this.direccion)
-    localStorage.celular(this.celular)
-    localStorage.edad(this.edad)
+    localStorage.setItem('nombre',this.nombre)
+    localStorage.setItem('apellido',this.apellido)
+    localStorage.setItem('direccion',this.direccion)
+    localStorage.setItem('celular',this.celular)
+    localStorage.setItem('edad',this.edad)
   }
 }
