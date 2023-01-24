@@ -1,0 +1,71 @@
+<h1 style="text-align: center; color:blue; height: 10px;">BOLETO.</h1>
+
+<table style="margin: 2px">
+    <tr style="border: 1px; color:beige;">
+        <td>
+            <h3 style="color: royalblue;">Nombre:</h3>
+        </td>
+        <td>
+            <h3 style="color:black;"> 
+                {{nombre}}
+            </h3>
+        </td>
+    </tr> 
+    <tr style="border: 1px; color:beige;">
+        <td>
+            <h3 style="color: royalblue;">Apellido:</h3>
+        </td>
+        <td>
+            <h3 style="color: black;">
+                {{apellido}}
+            </h3>
+        </td>
+    </tr>
+    <tr style="border: 1px; color:beige;">
+        <td>
+            <h3 style="color: royalblue;">Direccion:</h3>
+        </td>
+        <td>
+            <h3 style="color: black;">
+                {{direccion}}
+            </h3>
+        </td>
+    </tr>
+    <tr style="border: 1px; color:beige;">
+        <td>
+            <h3 style="color: royalblue;">Celular:</h3>
+        </td>
+        <td>
+            <h3 style="color: black;">
+                {{celular}}
+            </h3>
+        </td>
+    </tr>    
+    <tr style="border: 1px; color:beige;">
+        <td>
+            <h3 style="color: royalblue;">Edad:</h3>
+        </td>
+        <td>
+            <h3 style="color: black;">            
+                {{edad}}
+            </h3>
+            <h3 ngIf="edad>=18" style="color: red;">ES MAYOR DE EDAD.</h3>
+            <h3 ngIf="edad<18" style="color: red;">ES MENOR DE EDAD.</h3>
+        </td>
+    </tr>
+</table>
+<table style="margin: 2px;">
+    <tr style="border: 1px; color:wheat;">
+        <td>
+            <button (click)="Navegacion()" style="background-color:aquamarine; color:blue; box-shadow: 2px; box-shadow:tan ;margin-bottom: 1px;">REGRESAR.</button>
+        </td>
+
+        <td>
+            <button style="background-color:darkcyan; color:blue; margin-bottom: 2px;">DESCARGAR.</button>
+        </td>
+
+        <td>
+            <button style="background-color:darkseagreen; color:blue; margin-bottom: 2px;">IMPRIMIR.</button>
+        </td>
+    </tr>
+</table>
